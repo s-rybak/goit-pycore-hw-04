@@ -7,7 +7,7 @@ def get_cats_info(path):
                 cats.append({'id': id, 'name': name, 'age': age})
         return cats
     except FileNotFoundError:
-        print(f"Ошибка: Файл '{path}' не знайдений")
+        print(f"Помилка: Файл '{path}' не знайдений")
         return []
     except Exception as e:
         print(f"Помилка при читанні файлу: {e}")
